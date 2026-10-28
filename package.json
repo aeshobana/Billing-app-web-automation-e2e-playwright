@@ -1,0 +1,24 @@
+{
+  "name": "lkg-billing-e2e",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript end-to-end smoke suite for the LKG for Billing platform",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.0"
+  }
+}
